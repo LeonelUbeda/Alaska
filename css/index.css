@@ -1,0 +1,606 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400,700);
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+@font-face {
+	font-family: "untitled-font-1";
+	src:url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/untitled-font-1.eot");
+	src:url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/untitled-font-1.eot#iefix") format("embedded-opentype"),
+	url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/untitled-font-1.woff") format("woff"),
+	url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/untitled-font-1.ttf") format("truetype"),
+	url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/untitled-font-1.svg#untitled-font-1") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"]:after,
+[class*=" icon-"]:after {
+	font-family: "untitled-font-1";
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	speak: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+*{
+	font-family: 'Alegreya Sans', sans-serif;
+}
+
+#portada-hero{
+	/* Hero image */
+	background-image: url("../img/hero.jpg");
+	height: calc(-100px + 100vh);
+
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+
+}
+button {
+	transition: all .5s ease;
+	color: #fff;
+	border: 3px solid white;
+	font-family:'Montserrat', sans-serif;
+	text-transform: uppercase;
+	text-align: center;
+	line-height: 1;
+	font-size: 17px;
+	background-color : transparent;
+	padding: 10px;
+	outline: none;
+	border-radius: 4px;
+	width: 200px;
+}
+button:hover {
+	color: #001F3F;
+	background-color: #fff;
+	cursor: pointer;
+}
+
+#portada-hero div{
+	color: white;
+	text-align: center;
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	width: 50vw;
+
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+#menu-nav{
+	background-color: #03A9F4;
+	background-color: white;
+	width: 100%;
+	height: 50px;
+
+	z-index: 100;
+
+}
+.iconos-menu-superior img{
+	width: 20px;
+	margin-right: 5px;
+}
+#botones-menu{
+	list-style: none;
+	flex-wrap: nowrap;
+}
+
+#botones-menu{
+	padding: 0;
+}
+#botones-menu li{
+	padding-top: 10px;
+	text-decoration: none;
+	font-size: 20px;
+	margin: 0 10px;
+}
+#contenedor-mantenimiento{
+	padding-top: 30px;
+}
+#botones-menu li a{
+	display:flex;
+	align-items: center;
+	
+	height: 50px;
+	color: black;
+}
+
+
+#botones-menu li a:active{
+	text-decoration: none;
+
+}
+#botones-menu li a:hover{
+	color:#03A9F4;
+	text-decoration: none;
+}
+
+
+/* ---------------------- */
+
+#contenedor-servicios{
+	width: 100%;
+	height: auto;
+	background-color: #4CBFFF;
+}
+
+#contenedor-servicios>div{
+	width: 900px;
+	height: auto;
+}
+
+#titulo-mantenimiento{
+	width: 100%;
+	height: 50px;
+	margin-bottom: 30px;
+	border-radius: 4px;
+	margin-top: 50px;
+
+	background: rgba(148,82,235,1);
+	background: -moz-linear-gradient(left, rgba(148,82,235,1) 0%, rgba(98,59,255,1) 100%);
+	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(148,82,235,1)), color-stop(100%, rgba(98,59,255,1)));
+	background: -webkit-linear-gradient(left, rgba(148,82,235,1) 0%, rgba(98,59,255,1) 100%);
+	background: -o-linear-gradient(left, rgba(148,82,235,1) 0%, rgba(98,59,255,1) 100%);
+	background: -ms-linear-gradient(left, rgba(148,82,235,1) 0%, rgba(98,59,255,1) 100%);
+	background: linear-gradient(to right, rgba(148,82,235,1) 0%, rgba(98,59,255,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9452eb', endColorstr='#623bff', GradientType=1 );
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+}
+
+
+#titulo-mantenimiento2{
+	width: 100%;
+	height: 50px;
+	margin-bottom: 30px;
+	border-radius: 4px;
+	background: rgba(98,59,255,1);
+	background: -moz-linear-gradient(left, rgba(98,59,255,1) 0%, rgba(147,80,235,1) 100%);
+	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(98,59,255,1)), color-stop(100%, rgba(147,80,235,1)));
+	background: -webkit-linear-gradient(left, rgba(98,59,255,1) 0%, rgba(147,80,235,1) 100%);
+	background: -o-linear-gradient(left, rgba(98,59,255,1) 0%, rgba(147,80,235,1) 100%);
+	background: -ms-linear-gradient(left, rgba(98,59,255,1) 0%, rgba(147,80,235,1) 100%);
+	background: linear-gradient(to right, rgba(98,59,255,1) 0%, rgba(147,80,235,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#623bff', endColorstr='#9350eb', GradientType=1 );
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+
+
+}
+
+/* TARJETA MANTENIMIENTO */
+
+.tarjeta-mantenimiento{
+	margin:0;
+	width: 430px;
+	height:auto;
+	background-color: white;
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	border-radius: 4px;
+}
+
+
+.altura-pred >section{
+	height: 480px;
+}
+
+.tarjeta-mantenimiento>div:nth-child(1){
+	
+	width: 100%;
+	height: 150px;
+}
+
+.tarjeta-mantenimiento>div p{
+	padding: 0 10px;
+}
+
+.tarjeta-mantenimiento>div h3{
+	margin-top: 20px;
+}
+
+.titulo{
+	background-color: #086788;
+	
+
+	width: 100%;
+	height: 80px;
+}
+
+#titulo-metodo{
+	width: 100%;
+	height: 80px;
+	background-color: #086788;
+}
+
+
+#imagen-metodo{
+	background-image: url(../img/svg/metodo.svg);
+	
+	height: 600px;
+
+}
+
+
+
+
+
+
+
+
+/* CONTACTANOS */
+
+
+
+#contenedor-contactanos{
+	height: auto;
+	min-height: 100vh;
+	max-height: auto;
+	width: 100%;
+	padding-top: 50px;
+
+}
+
+
+
+#contacto{
+	width: 80%;
+	height: auto;
+	background-color:;
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 	
+}
+
+#mensaje{
+	width: 100%;
+	height: 400px;
+	background-color: white;
+	border-radius: 4px 0 0 4px;
+}
+
+#info{
+	width: 100%;
+
+	height:100%;
+	background-color: #103F6E;
+	border-radius: 0 4px 4px 0;
+	font-weight: 300;
+}
+
+#info img{
+	width: 20px;
+	margin-right: 10px
+}
+#info h5{
+	padding-top: 10px;
+}
+
+#info>div>div>div{
+	margin: 20px 0;
+	padding: 0 20px; 
+}
+
+.reset-padding{
+	padding: 0 !important;
+}
+
+
+#titulo-contactanos{
+	margin: 30px 0; 
+}
+#detalles h6{
+	margin-bottom:15px;
+	padding: 0 30px;
+}
+
+#detalles h6:nth-child(3){
+	margin-bottom:20px;
+	
+}
+
+
+
+.imagen-fondo{
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+
+
+
+
+
+.two{
+	background-color: #34ADFF;
+	background-image: -webkit-linear-gradient(150deg, #34ADFF 35%, #4CBFFF 35%);
+	min-height: 400px;
+}
+
+.one{	
+	background-color: #013A6B;
+	background-image: -webkit-linear-gradient(30deg, #013A6B 50%, #004E95 50%);
+	min-height: 500px;
+}
+.columna{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: row;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*    FOOTER     */
+
+
+
+#contenedor-footer{
+
+	background-color: #071E3C; 
+	height: 200px ; 
+	width: 100%;
+}
+
+
+
+#logo-footer{
+	width: 150px;
+	padding-top: 15px;
+
+}
+
+
+#logo-redes{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-right: 7px;
+	width: 30px;
+	height: 40px;
+	transition: 0.2s;
+}
+#logo-redes:hover{
+	cursor: pointer;
+	transform: scale(1.1);
+	transition: 0.5s;
+}
+
+
+
+
+#telefono{
+	font-size: 15px;
+	font-family: Arial;
+	font-weight: 400;
+}
+
+#contenedor-nosotros{
+	padding-top: 50px;
+
+	width: 100%;
+	background-color:white ;
+
+}
+
+#imagen-nosotros{
+	height: 70vw;
+	max-height: 500px;
+	
+	background-image: url(../img/svg/metodo-03.svg);
+	background-repeat: no-repeat;
+	background-position-x: center;
+}
+
+
+@media only screen and (max-width: 900px){
+
+	#contenedor-servicios>div{
+		width: auto;
+		height: auto;
+	}
+
+	.columna{
+		justify-content: space-around;
+	}
+
+	.tarjeta-mantenimiento{
+		margin: 0 10px;
+		width: 45vw;
+		height: 480px;
+	}
+}
+
+@media only screen and (max-width: 1024px){
+
+	#info{
+		min-width:280px; 
+	}
+
+
+#portada-hero div{
+	width: 70vw;
+}
+
+
+
+
+
+
+}
+
+@media only screen and (max-width: 768px){
+
+
+
+	.columna{
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		flex-direction: column;
+	}
+
+	.columna section:nth-child(1){
+		margin-bottom: 20px;
+	}
+
+	#contenedor-mantenimiento2 div:nth-child(2){
+		text-align: center;
+		margin-bottom: 15px;
+	}
+
+
+
+	#contenedor-servicios>div{
+		width: auto;
+		height: auto;
+	}
+
+	.tarjeta-mantenimiento{
+		margin: 0 10px;
+		width: 70vw;
+		height: auto;
+		margin-bottom: 0px;
+	}
+
+
+	#portada-hero div{
+		width: 80vw;
+	}
+
+	#portada-hero div h2{
+		font-size: 25px;
+	}
+
+	
+}
+
+@media only screen and (max-width: 820px){
+	.titulo{
+		height: 60px;
+	}
+
+	
+		#menu-nav{
+		flex-direction: column;
+		height: 90px;
+		align-items: center;
+		justify-content: center;
+	}
+	#telefono{
+		visibility: hidden;
+		display: none;
+	}
+	.iconos-menu-superior img{
+		display: none;
+	}
+}
+@media only screen and (max-width: 426px){
+
+	.tarjeta-mantenimiento>div:nth-child(1){
+	
+
+	height: 120px;
+
+	}
+
+
+	h2{
+		font-size: 25px;
+	}
+
+	#portada-hero div{
+		width: 99vw;
+	}
+
+	#portada-hero div button{
+		width: 50vw;
+	}
+
+
+
+
+
+
+	#contenedor-mantenimiento2{
+		padding-bottom: 0 !important;
+	}
+
+	#contacto{
+		width: 100%
+	}
+	.tarjeta-mantenimiento{
+		margin: 0;
+		width:90vw;
+		height: auto;
+		margin-bottom: ;
+		border-radius: 0;
+		box-shadow: none;
+	}
+	#titulo-mantenimiento{
+		width: 90%;
+		height: 50px;
+	}
+	#titulo-mantenimiento2{
+		width: 90%;
+		height: 50px;
+	}
+	#botones-menu li{
+		
+		margin:0 5px;
+	}
+
+	#botones-menu{
+		width: auto;
+	}
+
+	#info{
+		min-width:auto; 
+	}
+}
+
+@media only screen and (max-width: 320px){
+	#botones-menu{
+		
+		
+	}
+	#botones-menu li{
+		font-size: 17px;
+		
+	}
+	#servialaska{
+		font-size: 25px;
+	}
+	#menu-nav{
+		height: 50px;
+	}
+}
+
+@media only screen and (max-width: 280px){
+	#botones-menu li:nth-child(1){
+		display: none;	
+		
+	}
+}
+
+
+
+
+@media only screen and (max-width: 230px){
+	#botones-menu li{
+		display: none;	
+		
+	}
+}
+
